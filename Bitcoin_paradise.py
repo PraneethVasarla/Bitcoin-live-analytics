@@ -31,7 +31,7 @@ def showTrend():
 def showTrend2():
     webbrowser.open('https://trends.google.com/trends/explore/TIMESERIES?date=today+5-y&q=bitcoin&hl=en-US&sni=2')
 
-df=quandl.get("BCHARTS/LOCALBTCINR", authtoken="fsdVx3hHeZnaGysZE_hA")
+df=quandl.get("BCHARTS/LOCALBTCINR")
 
 
 #mailId= StringVar
