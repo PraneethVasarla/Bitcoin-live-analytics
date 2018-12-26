@@ -69,7 +69,7 @@ def source():
 
 
 def BTC_predict():
-    df = quandl.get("BCHARTS/LOCALBTCINR", authtoken="fsdVx3hHeZnaGysZE_hA")
+    df = quandl.get("BCHARTS/LOCALBTCINR")
     # df=pd.read_csv('btc.csv')
     df['HL_pct'] = (df['High'] - df['Low']) / df['Low'] * 100
     df['PCT_Change'] = (df['Close'] - df['Open']) / df['Open'] * 100
